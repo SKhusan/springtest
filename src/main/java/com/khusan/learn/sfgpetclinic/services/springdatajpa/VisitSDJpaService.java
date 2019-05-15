@@ -17,7 +17,7 @@ public class VisitSDJpaService implements VisitService {
 
     @Override
     public Set<Visit> findAll() {
-        Set<Visit> visits = new HashSet<>();
+        final Set<Visit> visits = new HashSet<>();
         visitRepository.findAll().forEach(visits::add);
         return visits;
     }
