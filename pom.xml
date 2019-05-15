@@ -19,6 +19,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <!--<junit-platform.version>5.3.1</junit-platform.version>-->
         <junit-platform.version>5.0.0-M4</junit-platform.version>
+        <mockito.version>2.23.0</mockito.version>
     </properties>
 
     <dependencies>
@@ -53,6 +54,18 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
